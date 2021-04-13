@@ -11,12 +11,16 @@ struct MyShapeView: View {
     let width: CGFloat
     let height: CGFloat
     
+    var startX = CGFloat(0)
+    var startY = CGFloat(0)
+    
     var body: some View {
         GeometryReader { geometry in
             let size = min(geometry.size.width, geometry.size.height)
-            let nearLine = size * 0.09
-            let farLine = size * 0.91
-            let middle = size / 2
+//            let nearLine = size * 0.09
+//            let farLine = size * 0.91
+//            let middle = size / 2
+//            let radius = farLine - nearLine
             
             ZStack {
                 
@@ -34,62 +38,19 @@ struct MyShapeView: View {
                     .scale(0.95)
                     .stroke(Color.orange, lineWidth: 5)
                 
-                
-                /*
                 Path { path in
-                    path.move(to: CGPoint(x: middle, y: nearLine))
-                    path.addLine(to: CGPoint(x: farLine, y: middle))
-                    path.addLine(to: CGPoint(x: middle, y: farLine))
-                    path.addLine(to: CGPoint(x: nearLine, y: middle))
-                    path.addLine(to: CGPoint(x: middle, y: nearLine))
+                    path.move(to: CGPoint(x: 70, y: 20))
+                    path.addLine(to: CGPoint(x: 70, y: 180))
+                    path.addLine(to: CGPoint(x: 180, y: 70))
+                    path.addLine(to: CGPoint(x: 20, y: 70))
+                    path.addLine(to: CGPoint(x: 130, y: 180))
+                    path.addLine(to: CGPoint(x: 130, y: 20))
+                    path.addLine(to: CGPoint(x: 20, y: 130))
+                    path.addLine(to: CGPoint(x: 180, y: 130))
+                    path.addLine(to: CGPoint(x: 70, y: 20))
                 }
-                .stroke(Color.red, lineWidth: 3)
-                */
-                
-                let startX = middle
-                let startY = nearLine
-                
-                ForEach(0..<5) { iteration in
-                    Path { path in
-                        path.move(to: CGPoint(x: startX, y: startY))
-                        path.addLine(to: CGPoint(x: startX, y: farLine))
-                    }
-                    .stroke(Color.red, lineWidth: 3)
-                }
-                
-                
-                Path { path in
-                    path.move(to: CGPoint(x: middle, y: nearLine))
-                    
-                    
-                }
-                .stroke(Color.red, lineWidth: 3)
-                
-                
-                /*
-                Path { path in
-                    path.move(to: CGPoint(x: middle + nearLine, y: nearLine))
-                    path.addLine(to: CGPoint(x: farLine, y: farLine))
-                    path.addLine(to: CGPoint(x: nearLine, y: farLine))
-                    path.addLine(to: CGPoint(x: middle - nearLine, y: nearLine))
-                }
+                //.stroke(Color.red, lineWidth: 3)
                 .fill(Color(red: 0.4, green: 0.4, blue: 0.4))
-                */
-                
-                /*
-                ForEach(0..<3) { iteration in
-                    Rectangle()
-                        .fill(
-                            LinearGradient(
-                                gradient: Gradient(colors: [.green, .blue]),
-                                startPoint: UnitPoint(x: 0, y: 1),
-                                endPoint: UnitPoint(x: 1, y: 0)
-                            )
-                        )
-                        .scaleEffect(0.7)
-                        .rotationEffect(.degrees(Double(iteration) * 60))
-                }
-                */
                 
                 Image(systemName: "bitcoinsign.circle")
                     .resizable()
