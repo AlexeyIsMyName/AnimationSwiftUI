@@ -17,6 +17,7 @@
 		E73749912626060C0055632C /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73749902626060C0055632C /* PathView.swift */; };
 		E7374994262606130055632C /* CurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7374993262606130055632C /* CurvesView.swift */; };
 		E7374997262607D00055632C /* MyShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7374996262607D00055632C /* MyShapeView.swift */; };
+		E737499E262655940055632C /* HexadecagonStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E737499D262655940055632C /* HexadecagonStarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E73749902626060C0055632C /* PathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
 		E7374993262606130055632C /* CurvesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvesView.swift; sourceTree = "<group>"; };
 		E7374996262607D00055632C /* MyShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShapeView.swift; sourceTree = "<group>"; };
+		E737499D262655940055632C /* HexadecagonStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexadecagonStarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				E73749902626060C0055632C /* PathView.swift */,
 				E7374993262606130055632C /* CurvesView.swift */,
 				E7374996262607D00055632C /* MyShapeView.swift */,
+				E737499D262655940055632C /* HexadecagonStarView.swift */,
 				E73749772626038B0055632C /* Assets.xcassets */,
 				E737497C2626038B0055632C /* Info.plist */,
 				E73749792626038B0055632C /* Preview Content */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E737499E262655940055632C /* HexadecagonStarView.swift in Sources */,
 				E7374988262604940055632C /* AnimationView.swift in Sources */,
 				E7374994262606130055632C /* CurvesView.swift in Sources */,
 				E73749912626060C0055632C /* PathView.swift in Sources */,
