@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		E7374974262603890055632C /* AnimationSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7374973262603890055632C /* AnimationSwiftUIApp.swift */; };
-		E7374976262603890055632C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7374975262603890055632C /* ContentView.swift */; };
 		E73749782626038B0055632C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E73749772626038B0055632C /* Assets.xcassets */; };
 		E737497B2626038B0055632C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E737497A2626038B0055632C /* Preview Assets.xcassets */; };
+		E7374984262604330055632C /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7374983262604330055632C /* TabViews.swift */; };
+		E7374988262604940055632C /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7374987262604940055632C /* AnimationView.swift */; };
+		E737498B262604AF0055632C /* ShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E737498A262604AF0055632C /* ShapesView.swift */; };
+		E737498E262605F90055632C /* GradientRectangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E737498D262605F90055632C /* GradientRectangles.swift */; };
+		E73749912626060C0055632C /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73749902626060C0055632C /* PathView.swift */; };
+		E7374994262606130055632C /* CurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7374993262606130055632C /* CurvesView.swift */; };
+		E7374997262607D00055632C /* MyShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7374996262607D00055632C /* MyShapeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7374970262603890055632C /* AnimationSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7374973262603890055632C /* AnimationSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSwiftUIApp.swift; sourceTree = "<group>"; };
-		E7374975262603890055632C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E73749772626038B0055632C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E737497A2626038B0055632C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E737497C2626038B0055632C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7374983262604330055632C /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
+		E7374987262604940055632C /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		E737498A262604AF0055632C /* ShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesView.swift; sourceTree = "<group>"; };
+		E737498D262605F90055632C /* GradientRectangles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientRectangles.swift; sourceTree = "<group>"; };
+		E73749902626060C0055632C /* PathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
+		E7374993262606130055632C /* CurvesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvesView.swift; sourceTree = "<group>"; };
+		E7374996262607D00055632C /* MyShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShapeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				E7374973262603890055632C /* AnimationSwiftUIApp.swift */,
-				E7374975262603890055632C /* ContentView.swift */,
+				E7374983262604330055632C /* TabViews.swift */,
+				E7374987262604940055632C /* AnimationView.swift */,
+				E737498A262604AF0055632C /* ShapesView.swift */,
+				E737498D262605F90055632C /* GradientRectangles.swift */,
+				E73749902626060C0055632C /* PathView.swift */,
+				E7374993262606130055632C /* CurvesView.swift */,
+				E7374996262607D00055632C /* MyShapeView.swift */,
 				E73749772626038B0055632C /* Assets.xcassets */,
 				E737497C2626038B0055632C /* Info.plist */,
 				E73749792626038B0055632C /* Preview Content */,
@@ -138,8 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7374976262603890055632C /* ContentView.swift in Sources */,
+				E7374988262604940055632C /* AnimationView.swift in Sources */,
+				E7374994262606130055632C /* CurvesView.swift in Sources */,
+				E73749912626060C0055632C /* PathView.swift in Sources */,
+				E737498E262605F90055632C /* GradientRectangles.swift in Sources */,
 				E7374974262603890055632C /* AnimationSwiftUIApp.swift in Sources */,
+				E737498B262604AF0055632C /* ShapesView.swift in Sources */,
+				E7374997262607D00055632C /* MyShapeView.swift in Sources */,
+				E7374984262604330055632C /* TabViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
