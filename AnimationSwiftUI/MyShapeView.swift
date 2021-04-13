@@ -11,15 +11,12 @@ struct MyShapeView: View {
     let width: CGFloat
     let height: CGFloat
     
-    var startX = CGFloat(0)
-    var startY = CGFloat(0)
-    
     var body: some View {
         GeometryReader { geometry in
             let size = min(geometry.size.width, geometry.size.height)
 //            let nearLine = size * 0.09
 //            let farLine = size * 0.91
-//            let middle = size / 2
+            let middle = size / 2
 //            let radius = farLine - nearLine
             
             ZStack {
@@ -38,18 +35,32 @@ struct MyShapeView: View {
                     .scale(0.95)
                     .stroke(Color.orange, lineWidth: 5)
                 
+                /*
                 Path { path in
-                    path.move(to: CGPoint(x: 70, y: 20))
-                    path.addLine(to: CGPoint(x: 70, y: 180))
-                    path.addLine(to: CGPoint(x: 180, y: 70))
-                    path.addLine(to: CGPoint(x: 20, y: 70))
-                    path.addLine(to: CGPoint(x: 130, y: 180))
-                    path.addLine(to: CGPoint(x: 130, y: 20))
-                    path.addLine(to: CGPoint(x: 20, y: 130))
-                    path.addLine(to: CGPoint(x: 180, y: 130))
-                    path.addLine(to: CGPoint(x: 70, y: 20))
+                     path.move(to: CGPoint(x: middle * 0.7, y: middle * 0.2))
+                     path.addLine(to: CGPoint(x: middle * 0.7, y: middle * 1.8))
+                     path.addLine(to: CGPoint(x: middle * 1.8, y: middle * 0.7))
+                     path.addLine(to: CGPoint(x: middle * 0.2, y: middle * 0.7))
+                     path.addLine(to: CGPoint(x: middle * 1.3, y: middle * 1.8))
+                     path.addLine(to: CGPoint(x: middle * 1.3, y: middle * 0.2))
+                     path.addLine(to: CGPoint(x: middle * 0.2, y: middle * 1.3))
+                     path.addLine(to: CGPoint(x: middle * 1.8, y: middle * 1.3))
+                     path.addLine(to: CGPoint(x: middle * 0.7, y: middle * 0.2))
                 }
-                //.stroke(Color.red, lineWidth: 3)
+                .fill(Color(red: 0.4, green: 0.4, blue: 0.4))
+                */
+                
+                Path { path in
+                    path.move(to: CGPoint(x: middle, y: middle * 0.1))          //1
+                    path.addLine(to: CGPoint(x: middle * 1.6, y: middle * 1.6)) //7
+                    path.addLine(to: CGPoint(x: middle * 0.1, y: middle))       //13
+                    path.addLine(to: CGPoint(x: middle * 1.6, y: middle * 0.4)) //3
+                    path.addLine(to: CGPoint(x: middle, y: middle * 1.9))       //9
+                    path.addLine(to: CGPoint(x: middle * 0.4, y: middle * 0.4)) //15
+                    path.addLine(to: CGPoint(x: middle * 1.9, y: middle))       //5
+                    path.addLine(to: CGPoint(x: middle * 0.4, y: middle * 1.6)) //11
+                    path.addLine(to: CGPoint(x: middle, y: middle * 0.1))       //1
+                }
                 .fill(Color(red: 0.4, green: 0.4, blue: 0.4))
                 
                 Image(systemName: "bitcoinsign.circle")
